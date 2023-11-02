@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100;300;600&family=Chivo+Mono:ital,wght@0,300;0,400;1,100;1,400;1,800&family=Livvic:ital,wght@0,100;1,200;1,600&family=Montserrat:wght@200;400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Rasa&family=Roboto&family=Roboto+Slab:wght@100;200;300;400;500;900&family=Sunflower:wght@300&family=Titillium+Web:wght@200;400&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap");
+
+/* font-family: 'Anuphan', sans-serif;
+font-family: 'Chivo Mono', monospace;
+font-family: 'Livvic', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rasa', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sunflower', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+.container .results .allResults .leftSide {
+    width: 30%;
+    min-height: 30vh;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    margin-top: -30px;
+  }
+
+.container .results .allResults .leftSide .left_carton .background,
+.container .results .allResults .leftSide .left_carton .spread,
+.container .results .allResults .leftSide .left_carton .symptoms  {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: 'Titillium Web', sans-serif;
+
+    
+}
+
+.container .results .allResults .rightSide {
+    padding: 0px;
+  }
+.container .results .allResults .rightSide #feedback{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     
+
+}
+.container .results.allResults .rightSide #feedback .first{
+    width: 100%;
+    background-color: red;
+}
+
+.container .results .allResults .rightSide #feedback .option {
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.5) inset;
+    position: relative;
+  }
+
+  .container .results .allResults .rightSide #feedback .option h1,
+  .container .results .allResults .rightSide #feedback .option h3,
+  .container .results .allResults .rightSide #feedback .option p{
+    margin-bottom: 10px;
+  }
+  .container .results .allResults .rightSide #feedback .option button{
+    width: 120px;
+    height: 37px;
+    background-color: #0fa20f;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    bottom: 30px;
+  }
+  .container .results .allResults .rightSide #feedback .option p{
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    overflow:hidden;
+  }

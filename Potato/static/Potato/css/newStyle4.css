@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100;300;600&family=Chivo+Mono:ital,wght@0,300;0,400;1,100;1,400;1,800&family=Livvic:ital,wght@0,100;1,200;1,600&family=Montserrat:wght@200;400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Rasa&family=Roboto&family=Roboto+Slab:wght@100;200;300;400;500;900&family=Sunflower:wght@300&family=Titillium+Web:wght@200;400&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap");
+
+/* font-family: 'Anuphan', sans-serif;
+font-family: 'Chivo Mono', monospace;
+font-family: 'Livvic', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rasa', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sunflower', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+.container .myForm .in {
+  margin-right: 30px;
+  width: 70%;
+  border: 3px solid #0fa20f;
+  height: 350px;
+  position: relative;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom: none;
+}
+
+.container .myForm .in h2 {
+  width: 100%;
+  text-align: center;
+  background-color: #0fa20f;
+  color: #fff;
+  height: 40px;
+  line-height: 30px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.container .myForm .in form input[type="file"] {
+  display: none;
+}
+.container .myForm {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  margin-top: -400px;
+  margin-bottom: 30px;
+  background: #f1efef;
+  min-height: 60vh;
+}
+.container .myForm .in form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .myForm .in form button,
+.container .myForm .in form label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 37px;
+  border: none;
+  background-color: #0fa20f;
+  color: #fff;
+  font-size: 18px;
+  transition: ease-in-out 0.4s;
+}
+.container .myForm .in form label {
+  background-color: #c0392b;
+  left: 0;
+  text-align: center;
+  padding-top: 8px;
+  width: 51%;
+  margin-left: -3px;
+  cursor: pointer;
+}
+.container .myForm .in form label:hover {
+  background-color: #822e24;
+}
+
+.container .myForm .info {
+  padding: 20px 50px;
+}
+
+.container .myForm .info ol {
+  margin-left: 33px;
+}
+.container .myForm .info ol li {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+}
+
+.container .myForm .info h1 {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.container .myForm .info p {
+  float: left;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+}
+
+.container .results {
+  width: 100%;
+}
+.container .results h1 {
+  width: 100%;
+  text-align: center;
+}
+.container .results .allResults {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.container .results .allResults .leftSide .myImage {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .results .allResults .leftSide .myImage img {
+  width: 350px;
+  height: 280px;
+}
+.container .results .allResults .leftSide .gottenResults .disease,
+.container .results .allResults .leftSide .gottenResults .confidence {
+  display: flex;
+  margin: 10px;
+}
+.container .results .allResults .leftSide .gottenResults {
+  padding: 10px 20px;
+}
+.container .results .allResults .leftSide .gottenResults h3 {
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.container .results .allResults .leftSide .gottenResults span {
+  margin-top: 7px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+

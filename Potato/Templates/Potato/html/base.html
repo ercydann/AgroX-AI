@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'Potato/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'Potato/css/newStyle.css' %}" />
+    <link rel="stylesheet" href="{% static 'Potato/css/newStyle3.css' %}" />
+    <link rel="stylesheet" href="{% static 'Potato/css/newStyle4.css' %}" />
+    <link rel="stylesheet" href="{% static 'Potato/css/last.css' %}" />
+    <link rel="stylesheet" href="{% static 'Potato/css/final.css' %}" />
+    <link rel="stylesheet" href="{% static 'Potato/css/final1.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="links">
+          <div class="logo">
+            <h1>AgriTech AI</h1>
+          </div>
+          <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Links</li>
+            <li>Address</li>
+            <a href="{% url 'Potato:agribot' %}">ChatBot</a>
+          </ul>
+        </div>
+      </div>
+      <div class="background_image">
+        <div class="im">
+          <img src="{% static 'Potato/images/now_image.png' %}" alt="" />
+        </div>
+        <div class="text">
+          <h2><i class="fa fa-phone"></i> +254 792 455 349</h2>
+          <h1>AI Plant assess</h1>
+          <p>
+            Welcome to our agriculture-focused platform, where technology meets
+            the soil! Here, you have the power to harness the wonders of AI to
+            ensure the vitality of your crops. Whether you're a seasoned farmer
+            or a novice gardener, our intuitive system allows you to
+            effortlessly browse plant images or snap and upload your own. With
+            just a few clicks or a simple drag-and-drop, you can have our
+            cutting-edge model assess the health of your plants.
+          </p>
+          <button>read more</button>
+        </div>
+        <div class="leftLosange"></div>
+        <div class="rightLosange"></div>
+        <div class="firstDel"></div>
+        <div class="secondDel"></div>
+      </div>
+      <div class="myForm">
+        <div class="in">
+          <h2>Browse your image</h2>
+          <form id="imageUploadForm" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" id="imageInput" accept="image/*" />
+            <label for="imageInput"
+              ><i class="fa fa-upload"></i> Upload image</label
+            >
+            <img
+              id="imagePreview"
+              src=""
+              alt="Image Preview"
+              style="width: 350px; height: 230px; display: none"
+            />
+            <button id="submitButton" type="button">Send Image</button>
+          </form>
+        </div>
+        <div class="info">
+          <h1>How to use our AI</h1>
+          <p>
+            Here, you have the power to harness the wonders of AI to ensure the
+            vitality of your crops. Whether you're a seasoned farmer or a novice
+            gardener, our intuitive system allows you to effortlessly browse
+            plant images or snap and upload your own. With just a few clicks or
+            a simple drag-and-drop, you can have our cutting-edge model assess
+            the health of your plants.
+          </p>
+          <p>
+            Ready to optimize your yields and nurture thriving gardens? Let us
+            guide you through this seamless process. Just follow these quick
+            steps:
+          </p>
+          <ol>
+            <li>Browse or capture an image of your plant.</li>
+            <li>
+              Upload it to our platform by dragging and dropping, or simply
+              clicking.
+            </li>
+            <li>
+              Our AI model will analyze the image and provide insights on your
+              plant's health.
+            </li>
+          </ol>
+
+          <p>
+            It's that easy! Get started now and make informed decisions for your
+            agricultural endeavors. Your plant's well-being is just a click
+            away.
+          </p>
+        </div>
+      </div>
+      <div class="results" id="allInformations">
+        <div class="allResults">
+          <div class="leftSide">
+            <div class="myImage">
+              <img
+                id="imagePreview2"
+                src=""
+                alt="Image result"
+              />
+            </div>
+            <div class="gottenResults" id="backGroundInfo">
+
+              
+
+              <!-- <div class="left_carton">
+                <p class="background" id="background">
+                 
+                </p>
+
+                <p class="symptoms" id="symptoms">
+                 
+                </p>
+
+                <p class="spread" id="spread">
+                 
+                </p>
+              </div> -->
+            </div>
+          </div>
+          <div class="rightSide">
+            <h1>Recommendations</h1>
+            <div id="feedback"></div>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'Potato/js/code.js' %}"></script>
+  </body>
+</html>

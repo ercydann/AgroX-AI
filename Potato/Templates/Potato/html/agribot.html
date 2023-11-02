@@ -1,0 +1,60 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'Potato/css/botStyle.css' %}" />
+    <link rel="stylesheet" href="{% static 'Potato/css/botStyle1.css' %}" />
+    <link rel="stylesheet" href="{% static 'Potato/css/botStyle3.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="navigation">
+            <div class="logo">
+                <h1>Agri<span>Tech</span></h1>
+            </div>
+            <ul class="links">
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">Links</a></li>
+            </ul>
+        </div>
+        <div class="text">
+          <h1>AgriTech Generative AI</h1>
+        </div>
+       <div class="chats">
+        <div class="inner">
+            <div class="conversations">
+
+              <div class="userText">
+                <div class="head">
+                  <div>
+                    <img src="{% static 'Potato/images/user.png' %}" alt="" width="0px" height="0px" style="display: none;" id="userImage">
+                    <img src="{% static 'Potato/images/chatbot.jpg' %}" alt="" width="100px" id="botImage">
+                    <h1>Agri Bot</h1>
+                  </div>
+                  <div id="time">
+                  </div>
+                </div>
+                <p>Hello, How can I assist you today?</p>
+              </div>
+           
+            </div>
+            <div class="requestForm">
+              <form id="submitForm">
+                {% csrf_token %}
+                <textarea name="" id="messageInput" cols="1" rows="1" placeholder="Type your question..."></textarea>
+                <input type="submit" id="submitBtn">
+              </form>
+            </div>
+
+        </div>
+       </div>
+    </div>
+    <script src="{% static 'Potato/js/agribot.js' %}"></script>
+  </body>
+</html>

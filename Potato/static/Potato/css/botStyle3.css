@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  body {
+    width: 100%;
+    height: auto;
+    color: #fff;
+  }
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 40%,
+        rgba(0, 0, 0, 0.5) 60%
+      ),
+      url("../images/Deep_Learning.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .container .logo h1 {
+    font-size: 40px;
+  }
+  .container .logo h1 span {
+    color: crimson;
+  }
+  .container .navigation ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .container .navigation ul li a {
+    color: wheat;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+  }
+  .container .navigation ul li a:hover {
+    color: goldenrod;
+    transform: scale(1.1);
+  }
+  
+  .container .text {
+    width: 100%;
+    padding: 30px 0px;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .text h1 {
+    color: #f06e03;
+    font-size: 3.5rem;
+    text-shadow: 4px 2px wheat;
+  }
+  .container .chats {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding-bottom: 100px;
+  }
+  
+  .container .chats .inner {
+    min-width: 30%;
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0 0 20px 10px rgba(4, 164, 233, 0.4);
+    position: relative;
+    margin-bottom: 70px;
+  }
+  
+  .container .chats .inner .conversations {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .container .chats .inner .conversations .userText,
+  .container .chats .inner .conversations .botText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgba(6, 194, 245, 0.2);
+    min-width: 30%;
+    max-width: 85%;
+    width: auto;
+  
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+  }
+  .container .chats .inner .conversations .botText {
+    background-color: rgba(122, 152, 122, 0.4);
+  }
+  .container .chats .inner .conversations .userText {
+    border-radius: 0px;
+  }
+  .container .chats .inner .conversations .userText {
+    align-self: flex-start;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  
+  .container .chats .inner .conversations .botText {
+    align-self: flex-end;
+  }
+  .container .chats .inner .conversations .userText .head,
+  .container .chats .inner .conversations .botText .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgba(6, 194, 245, 0.5);
+  }
+  .container .chats .inner .conversations .userText .head div,
+  .container .chats .inner .conversations .botText .head div {
+    display: flex;
+    align-items: center;
+  }
+  .container .chats .inner .conversations .botText .head {
+    background-color: green;
+  }
+  .container .chats .inner .conversations .userText p,
+  .container .chats .inner .conversations .botText p {
+    padding: 9px 11px;
+    font-size: 17px;
+  }
+  
+  .container .chats .inner .conversations .userText .head img,
+  .container .chats .inner .conversations .botText .head img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 17px;
+  }
+  
+  .container .chats .inner .conversations .userText .head h1,
+  .container .chats .inner .conversations .botText .head h1 {
+    font-size: 20px;
+  }
+  .container .chats .inner .requestForm {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .container .chats .inner .requestForm form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .chats .inner .requestForm textarea {
+    width: 80%;
+    outline: none;
+    border: 1px solid rgba(122, 152, 122, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 2%;
+    min-height: 40px;
+    height: auto;
+    color: grey;
+    padding: 10px 10px;
+    font-size: 19px;
+  }
+  
+  .container .chats .inner .requestForm input {
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(6, 194, 245, 0.7);
+    transition: 0.3s ease-in-out;
+  }
+  .container .chats .inner .requestForm input:hover {
+    cursor: pointer;
+    background-color: green;
+    box-shadow: 0 0 20px 10px rgba(241, 6, 245, 0.7);
+    transform: scale(1.1);
+  }
+  
