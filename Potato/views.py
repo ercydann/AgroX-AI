@@ -11,6 +11,40 @@ openai.api_key = openai_Secret_key
 
 
 class_names = ['Early blight', 'Late blight', 'Healthy']
+crop_names = {
+            0: 'apple',
+            1: 'banana',
+            2: 'blackgram',
+            3: 'chickpea',
+            4: 'coconut',
+            5: 'coffee',
+            6: 'cotton',
+            7: 'grapes',
+            8: 'jute',
+            9: 'kidneybeans',
+            10: 'lentil',
+            11: 'maize',
+            12: 'mango',
+            13: 'mothbeans',
+            14: 'mungbean',
+            15: 'muskmelon',
+            16: 'orange',
+            17: 'papaya',
+            18: 'pigeonpeas',
+            19: 'pomegranate',
+            20: 'rice',
+            21: 'watermelon'
+}
+
+fertilizer_names = [
+    'Urea',
+    'DAP',
+    '14-35-14',
+    '28-28',
+    '17-17-17',
+    '20-20',
+    '10-26-26'
+]
 
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -111,7 +145,7 @@ def askAgribot(message):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are AgriBot, a multilingual AI assistant expert in Agriculture trained by USIU AgriTech Team"},
+            {"role": "system", "content": "You are AgriBot, an expert in Agriculture trained by AgriTech"},
             {"role": "user", "content":message},
         ]
     )
